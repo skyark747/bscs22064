@@ -1,0 +1,49 @@
+body{
+    background-image: url("isabela.jpeg");
+    background-color: rgba(0,0,0, 0.2);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+.nav{
+    padding: 20px ;
+    display: block;
+}
+.nav a{
+    padding: 5px;
+    justify-content: space-between;
+    font-size: larger;
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+}
+
+.nav a:hover{
+    background-color: #9999;
+}
+a.info{
+    margin-left: 1100px;
+    font-size: 25px;
+    border-style: solid;    
+    border-width: 1px;
+}
+.information{
+    height: 30rem;
+    display:flex;
+    justify-content: space-between;
+}
+.information p.n{
+    font-style: italic;
+    font-weight:bold;
+    color: rgb(255, 255, 255);
+    font-size: 190px;
+}
+.description{
+    margin-top: 0px;
+    color:#898787dd;
+    font-size: 20px;
+    font-style: italic;
+}
+.details{
+    background-color: rgba(0,0,0, 0.5);
+}
+
