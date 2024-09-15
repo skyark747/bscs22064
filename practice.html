@@ -8,24 +8,33 @@
         <link rel="stylesheet" type="text/css" href="practice.css">
     </head>
     <body>
-        <div class="nav">
-            <a href="#skills">Skills</a>
-            <a href="#about">About</a>
-            <a href="#awards">Achievements</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="#footer" class="info">Get in Touch</a>
-        </div>
-            <div class="information">
-                <p class="n">Isabella </p>
-                <p class="n">Merced</p>
+        <script >
+            function myFunction() {
+                document.getElementById("dropdown").style.display="block";
+            }
+        </script>
+        <div class="details">
+            <button onClick="myFunction()" class="info">details</button>
+            <div class="nav" id="dropdown">
+                <a href="skills.html">Skills</a>
+                <a href="about.html">About</a>
+                <a href="awards.html">Achievements</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
             </div>
-
-            
-        <div class="description">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is a simple design of my portfolio, created using HTML, CSS and JavaScript.<br> I'm always looking to expand my skills and improve my design skills. Please,
-                <br>feel free to contact me for any inquiries.</p>
+            <!-- <a href="#" class="Contact">Get in Touch</a> -->
         </div>
+        <div class="information">
+            <p class="n">M.Soban Ijaz</p>
+           <img src="new.jpg" alt="bscs22064">
+        </div>
+            <div class="description">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is a simple design of my portfolio, created using HTML, CSS and JavaScript.<br> I'm always looking to expand
+                my skills and improve my design skills. Please,
+                <br>feel free to contact me for any inquiries.
+            </p>
+        </div>
+       
     </body>
 </html>
