@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Awards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a simple design of portfolio">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .heading {
+            margin-top: 0;
+            height: 200px;
+            background-color: white;
+            width: 500px;
+            border-radius: 50px;
+            display: flex;
+        }
+
+        .heading .a {
+            margin-left: 40px;
+            font-style: italic;
+            font-size: 150px;
+            color: black;
+            margin-top: 10px;
+        }
+        .c{
+            margin-top: 10px;
+            margin-left: 30px;
+            font-style: italic;
+            font-size: 150px;
+            color: white;
+        }
+        .Awards h1 {
+            font-size: 50px;
+            margin-left: 50px;
+            margin-top: 100px;
+            color: white;
+        }
+        img {
+            border-radius: 20px;
+            margin-left: 50px;
+            width: 500px;
+        }
+        img.a{
+            border-radius: 20px;
+            padding-left: 100px;
+            height: 255px;
+        }
+        @media (max-width: 768px) {
+          .heading {
+            margin-top: 0;
+            height: 80px;
+            background-color: white;
+            width: 200px;
+            border-radius: 50px;
+            display: flex;
+        }
+
+        .heading .a {
+            justify-content: center;
+            margin-top: 50px;
+            font-style: italic;
+            font-size: 50px;
+            color: black;
+            margin-top: 10px;
+        }
+        .heading .c{
+            margin-left: 0px;
+            justify-content: center;
+            margin-top: 80px;
+            font-style: italic;
+            font-size: 30px;
+            color: white;
+        }
+
+         .Awards h1 {
+            font-size: 30px;
+            margin-left: 20px;
+            margin-top: 100px;
+            color: white;
+        }
+        img{
+            height: 150px;
+            border-radius: 20px;
+            margin-left: 20px;
+            width: 300px;
+        }
+        img.a{
+            margin-top: 50px;
+            border-radius: 20px;
+            padding-left: 0px;
+            height: 150px;
+        }
+    }
+    </style>
+    <div class="heading">
+        <P class="a">Awards</P>
+        <P class="c">&Certificates</P>
+    </div>
+    <div class="Awards">
+        <section>
+            <h1>Game Development</h1>
+
+            <img src="g1.jpg" alt="game development" >
+            <img src="g2.jpg" class="a" alt="game development">
+        </section>
+
+        <section>
+            <h1>Competitve Programming</h1>
+        </section>
+    </div>
+</body>
