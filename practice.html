@@ -10,8 +10,16 @@
     <body>
         <script >
             function myFunction() {
-                document.getElementById("dropdown").style.display="block";
+                if (document.getElementById("dropdown").style.display=="block") {
+                    document.getElementById("dropdown").style.display="none";
+                }
+                else {
+                    document.getElementById("dropdown").style.display="block";
+                }
             }
+
+            
+
         </script>
         <div class="details">
             <button onClick="myFunction()" class="info">details</button>
@@ -19,10 +27,10 @@
                 <a href="skills.html">Skills</a>
                 <a href="about.html">About</a>
                 <a href="awards.html">Achievements</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <a href="project.html">Projects</a>
+                <a href="https://www.linkedin.com/in/mohammed-soban-ijaz-102203224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="L">Linkdln</a>
             </div>
-            <!-- <a href="#" class="Contact">Get in Touch</a> -->
+            
         </div>
         <div class="information">
             <p class="n">M.Soban Ijaz</p>

@@ -29,7 +29,8 @@ body{
 }
 
 .nav a:hover {
-    background-color: #9999;
+    background-color: white;
+    color: black;
 }
 
 
@@ -56,6 +57,9 @@ img{
     margin-left: 400px;
     border-radius: 10px;
 }
+
+
+
 @media (max-width: 768px) {
     .details button {
         display: block;
@@ -84,8 +88,23 @@ img{
         }
     
         .nav a:hover {
-            background-color:#9999;
+            background-color:white;
+            color: black;
         }
+        .details .Contact {
+                    margin-top: 20px;
+                    margin-left: 7em;
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: white;
+                    border: solid;
+                    border-width: 1px;
+                }
+        
+        .details .Contact:hover {
+                    background-color: white;
+                    color: black;
+                }
   .information {
       flex-direction: column;
       justify-content: center;
