@@ -259,12 +259,12 @@ footer{
             margin-left: 40px;
             font-weight: bold;
             color: orangered;
+            margin-left: 10px;
         }
     
         .s:hover {
             text-shadow: 0 0 25px orangered;
             font-size: 52px;
-            margin-left: 10px;
         }
     
         .i {
