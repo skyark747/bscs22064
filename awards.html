@@ -52,51 +52,53 @@
             height: 255px;
         }
         @media (max-width: 768px) {
-          .heading {
-            margin-top: 0;
-            height: 80px;
-            background-color: white;
-            width: 200px;
-            border-radius: 50px;
-            display: flex;
+        body {
+            background-color:white;
         }
 
-        .heading .a {
-            justify-content: center;
-            margin-top: 50px;
+        .heading {
+            height: 80px;
+            display: flex;
+            
+            background-color: rgb(36, 36, 73);
+        }
+
+        .heading p{
+            margin-left: 20px;
             font-style: italic;
-            font-size: 50px;
-            color: black;
+            font-size: 40px;
+            color:orangered;
             margin-top: 10px;
         }
-        .heading .c{
-            margin-left: 0px;
-            justify-content: center;
-            margin-top: 80px;
-            font-style: italic;
-            font-size: 30px;
-            color:orangered;
-        }
         .heading span{
-            color: black;
+            color:white;
         }
-         .Awards h1 {
+        h1 span{
+            color: orangered;
+        }
+        .Awards h1 {
             font-size: 30px;
-            margin-left: 20px;
+            margin-left: 10px;
             margin-top: 100px;
-            color: white;
+            color:black;
         }
-        img{
-            height: 150px;
+        img {
             border-radius: 20px;
-            margin-left: 20px;
-            width: 300px;
+            margin-left: 10px;
+            
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+        }
+        img.b{
+            margin-top: 30px;
+            width:250px;
+
         }
         img.a{
-            margin-top: 50px;
+            margin-top: 30px;
             border-radius: 20px;
-            padding-left: 0px;
+            padding-left: 100px;
             height: 150px;
+            width: 150px;
         }
     }
     </style>
@@ -107,7 +109,7 @@
         <section>
             <h1><span>Game</span> Development</h1>
 
-            <img src="g1.jpg" alt="game development" >
+            <img src ="g1.jpg" class="b" alt="game development" >
             <img src="g2.jpg" class="a" alt="game development">
         </section>
 
