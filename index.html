@@ -6,6 +6,7 @@
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="This is a simple design of portfolio">
         <link rel="stylesheet" type="text/css" href="practice.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <script >
@@ -17,32 +18,45 @@
                     document.getElementById("dropdown").style.display="block";
                 }
             }
-
-            
-
+           function openPDF() {
+                var pdfURL = "soban.cv.pdf"; 
+                window.open(pdfURL, '_blank');
+            }
         </script>
         <div class="details">
-            <button onClick="myFunction()" class="info">details</button>
+            <button onClick="myFunction()" class="info">MENU</button>
+            <a href="#"  class="logo"><span>So</span>ban</a>
             <div class="nav" id="dropdown">
                 <a href="skills.html">Skills</a>
                 <a href="about.html">About</a>
                 <a href="awards.html">Achievements</a>
                 <a href="project.html">Projects</a>
-                <a href="https://www.linkedin.com/in/mohammed-soban-ijaz-102203224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="L">Linkdln</a>
             </div>
-            
+            <button class="button">Contact me</button>
         </div>
-        <div class="information">
-            <p class="n">M.Soban Ijaz</p>
-           <img src="new.jpg" alt="bscs22064">
+        <section class="container">
+                <div class="home">
+                    <span class="h">Hello</span><br>
+                    <span class="i">I'm</span>
+                    <span class="s">Soban<br></span>
+                    <span class="c">a Computer Scientist</span><br>
+                    <P>
+                        I am a passionate software engineer with a strong foundation in computer science<br> 
+                        and a keen interest in AI/ML.I have a proven track record of working on challenging projects and successfully <br>
+                        advancing my skills in the field. I am eager to collaborate with talented individuals to create innovative <br>
+                        solutions for real-world problems. Please feel free to contact me for more information or to schedule a meeting.
+                    </P>
+                </div>
+                <div class="image">
+                    <img src="soban2.jpg" class="img">
+            </div>
+        </section>
+        <div class="buttons">
+            <button class="button" onclick="openPDF()">Resume</button>
+            <button class="buttona">Hire Me</button>
         </div>
-            <div class="description">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is a simple design of my portfolio, created using HTML, CSS and JavaScript.<br> I'm always looking to expand
-                my skills and improve my design skills. Please,
-                <br>feel free to contact me for any inquiries.
-            </p>
-        </div>
-       
+        <footer>
+            <p>2024 Soban. All rights reserved.</p>
+        </footer>
     </body>
 </html>

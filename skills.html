@@ -9,34 +9,43 @@
     <body>
         <style>
             body{
-                background-color: #1a1919dd
+                background-color:white;
                 
             }
             .heading{
-                margin-top: 0;
-                height: 200px;
+               background-color: rgb(36, 36, 73);
+               display: flex;
+               height: 80px;
+            }
+            .heading span{
+                color: orangered;
             }
             .heading p{
+                margin-left: 10vw;
                 font-style: italic;
-                font-size: 150px;
-                color: white;
-                margin-top: 10px;
+                font-size: 70px;
+                color:white;
+                margin-top: 0px;
             }
             .skills{
-                margin-left: 500px;
-                background-color: rgb(255, 255, 255);
+                margin-left: 450px;
                 width: 600px;
                 height: 600px;
-                border-radius: 20px;
+               
             }
+            .skills .S{
+                color: orangered;
+            } 
             .skills h2{
+                
+                text-shadow: 0 0 25px orangered,
+                0 0 60px orangered;
                 margin-top: 10px;
                 font-size: 80px;
-                margin-left: 30px;
+                margin-left: 10px;
             }
             .skills ul{
                 font-size: 20px;
-                margin-left: 30px;
             }
             @media (max-width: 768px) {
                 .heading{
@@ -68,11 +77,11 @@
             }
         </style>
         <div class="heading">
-            <P>Skills</P>
+            <P><span>Ski</span>lls</P>
         </div>
         <div class="skills">
         <section>
-            <h2>Technical Skills</h2>
+            <h2>Technical <span class="S">Skills</span></h2>
             <ul>
                 <li>C</li>
                 <li>C++</li>
@@ -86,7 +95,7 @@
         </section>
         
         <section>
-            <h2>Soft Skills</h2>
+            <h2><span class="S">Soft </span>Skills</h2>
             <ul>
                 <li>Communication</li>
                 <li>Project Management</li>

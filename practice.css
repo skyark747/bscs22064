@@ -1,22 +1,55 @@
 body{
    
-    background-color: rgb(21, 20, 20)
-
+    background-color:white;
+ 
 }
 .details{
+    background-color: rgb(36, 36, 73);
     display: flex;
-    height: 60px;
+    height: 80px;
 }
-.details button{
+.details .info{
     display: none;
-    position: relative;
-    height: 40px;
-    width: 100px;
-    font-size: large;
 }
+.details .button{
+    margin-top: 15px;
+    background-color: white;
+    margin-left: 65vw;
+    height: 40px;
+    width: 130px;
+    font-size: 18px;
+    border-radius: 10px;
+    transform: 0.4s ease;
+}
+.details .button:hover{
+
+    background-color:orangered;
+    color:black;
+    transform: scale(1.1);
+}
+.details .logo{
+    margin-left: 10vw;
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(243, 42, 42);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.details .logo:hover{
+    text-shadow: 0 0 25px orangered,
+    0 0 50px orangered;
+    transform: scale(1.1);
+    color:orangered;
+}
+span{
+    color: white;
+}
+
 .nav {
-    padding: 20px;
-    display: block;
+    margin-left: 32vw;
+    padding: 25px;
+    position: fixed;
 }
 
 .nav a {
@@ -31,106 +64,284 @@ body{
 .nav a:hover {
     background-color: white;
     color: black;
+    border-radius: 5px;
 }
-
-
-.information {
-    height: 25rem;
+.container{
+    width: 100%;
+    height: 100 vh;
     display: flex;
 }
-
-.information p.n {
-    font-style: italic;
+.home{
+    margin-top: 15vh;
+    margin-left: 100px;
+    
+}
+.home .h{
+    color: black;
+    font-size: 40px;
+    margin-left: 40px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
-    font-size: 120px;
 }
 
-.description {
-    color: #898787dd;
-    font-size: 20px;
+.s{
+    color: black;
+    font-size: 50px;
+    margin-left: 40px;
+    font-weight: bold;
+    color: orangered;
+}
+.s:hover{
+    text-shadow: 0 0 25px orangered;
+    font-size: 52px;
+}
+.i{
+    color: black;
+    font-size: 50px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.c{
+    color: black;
+    font-size: 60px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.home p{
+    margin-left: 40px;
+    margin-top: 50px;
     font-style: italic;
+}
+.image{
+    margin-top: 50px;
+    margin-left: 200px;
 }
 img{
-    margin-top: 30px;
-    margin-left: 400px;
+    width: 270px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px orangered;
+}
+.buttons{
+    margin-left: 138px;
+}
+.buttons button{
+    height: 50px;
+    width: 100px;
     border-radius: 10px;
 }
-
-
-
+.buttons .button{
+    background-color:white;
+    font-weight: bold;
+    border-color: orangered;
+    border-width: 1px;
+}
+.buttons .buttona{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.buttona:hover{
+    color: black;
+    background-color:orangered;
+}
+.button:hover{
+    color: white;
+    background-color: darkblue;
+}
+footer{
+    background-color: rgb(36, 36, 73);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 @media (max-width: 768px) {
-    .details button {
-        display: block;
-            position: relative;
-            height: 30px;
-            width: 50px;
-            font-size: small;
+    .details {
+            background-color: rgb(36, 36, 73);
+            display: flex;
+            height: 80px;
+        }
+        
+        .details .button {
+            display: none;
+            margin-top: 15px;
+            background-color: white;
+            margin-left: 65vw;
+            height: 40px;
+            width: 130px;
+            font-size: 18px;
+            border-radius: 10px;
+            transform: 0.4s ease;
+        }
+        .details .logo {
+            margin-left: 40vw;
+            margin-top: 20px;
+            font-size: 30px;
+            color: rgb(243, 42, 42);
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s ease;
         }
     
+        .details .logo:hover {
+            text-shadow: 0 0 25px orangered,
+                0 0 50px orangered;
+            transform: scale(1.1);
+            color: orangered;
+        }
+    
+        span {
+            color: white;
+        }
+        .details .info {
+            display: block;
+            height: 5vh;
+            width: 25vw;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        .info :hover{
+            background-color: orangered;
+        }
         .nav {
             border-radius: 5px;
-            margin-top: 35px;
+            margin-top: 60px;
             display: none;
             position: absolute;
             background-color: #f1f1f1;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 25px orangered;
             z-index: 1;
+            margin-left: 10px;
         }
     
         .nav a {
             color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
         }
     
         .nav a:hover {
-            background-color:white;
+            background-color: white;
             color: black;
+            border-radius: 5px;
         }
-        .details .Contact {
-                    margin-top: 20px;
-                    margin-left: 7em;
-                    text-decoration: none;
-                    font-size: 20px;
-                    color: white;
-                    border: solid;
-                    border-width: 1px;
-                }
-        
-        .details .Contact:hover {
-                    background-color: white;
-                    color: black;
-                }
-  .information {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .information p.n {
-      color: rgb(255, 255, 255);
-     
-      font-size: 50px;
-     
-  }
-  .information img{
-      width: 150px;
-      margin-left: 0px;
-  }
-  .description h1{
-    margin-top: 50px;
-    margin-left: 20px;
-    font-size: 25px;
-  }
-  .description p{
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-  }
-
-
+        .details .button:hover {
     
+            background-color: orangered;
+            color: black;
+            transform: scale(1.1);
+        }
+    .container {
+        width: 100%;
+        height: 100 vh;
+        display: block;
+    }
+
+    .home {
+    margin-top: 10vh;
+    margin-left: 0px;
+
+    }
+        .home .h {
+            color: black;
+            font-size: 30px;
+            margin-left: 40px;
+            font-weight: bold;
+        }
+    
+        .s {
+            color: black;
+            font-size: 50px;
+            margin-left: 40px;
+            font-weight: bold;
+            color: orangered;
+        }
+    
+        .s:hover {
+            text-shadow: 0 0 25px orangered;
+            font-size: 52px;
+            margin-left: 10px;
+        }
+    
+        .i {
+            color: black;
+            font-size: 50px;
+            margin-left: 40px;
+            font-weight: bold;
+        }
+    
+        .c {
+            color: black;
+            font-size: 30px;
+            margin-left: 40px;
+            font-weight: bold;
+        }
+    
+        .home p {
+            margin-left: 40px;
+            margin-top: 50px;
+            font-style: italic;
+            
+        }
+        .image {
+            margin-top: 30px;
+            margin-left: 0px;
+            
+        }
+        
+        img {
+            margin-top: 20px;
+            margin-left: 15vw;
+            width: 270px;
+            border-radius: 50%;
+            box-shadow: 0 0 25px orangered;
+        }
+   .buttons button {
+      height: 50px;
+      width: 100px;
+      border-radius: 10px;
+      margin-left: 90px;
+        margin-top: 50px;
+      
+  }
+  .buttons{
+    margin-left: 0px;
+  }
+  .buttons .button {
+      background-color: white;
+      font-weight: bold;
+      border-color: orangered;
+      border-width: 1px;
+  }
+
+  .buttons .buttona {
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      margin-left: 20px;
+  }
+
+  .buttona:hover {
+      color: black;
+      background-color: orangered;
+  }
+
+  .button:hover {
+      color: white;
+      background-color: darkblue;
+  }
+
+  footer {
+      background-color: rgb(36, 36, 73);
+      color: white;
+      text-align: center;
+      padding: 3px;
+      width: 100%;
+      position: relative;
+      margin-top: 50px;
+  }
 }
