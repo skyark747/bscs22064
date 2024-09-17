@@ -223,10 +223,9 @@ footer{
                 text-decoration: none;
                 display: block;
         }
-    
         .nav a:hover {
-            background-color: white;
-            color: black;
+            background-color: black;
+            color: white;
             border-radius: 5px;
         }
         .details .button:hover {
