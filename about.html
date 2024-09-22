@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a simple design of portfolio">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,6 +41,23 @@
             font-style: italic;
             color: black;
         }
+        .media{
+            display: flex;
+            margin-top: 50px;
+            margin-left: 35%;
+        }
+        .media a{
+            margin-top: 50px;
+            padding-left: 50px;
+            transition: 0.3s ease;
+        }
+        .media a:hover{
+            transform: scale(1.2);
+        }
+        .media a img {
+            width: 30px;
+            height: 30px;
+        }
         @media (max-width: 768px) {
         body {
             background-color:white;
@@ -68,7 +87,20 @@
             text-align: center;
             font-style: italic;
             color: black;
-        }   
+        }  
+        .media{
+            display: flex;
+            margin-top: 50px;
+            margin-left: 15%;
+        }
+        .media a{
+            margin-top: 50px;
+            padding-left: 30px;
+        }
+        .media a img {
+            width: 30px;
+            height: 30px;
+        } 
         }
     </style>
     <div class="heading">
@@ -83,5 +115,11 @@
                 <br><br>I am very much intrigued how computer science is changing the world. New inventions are being made day by day. So lets build something together and make the world a better place.
                </P>
             </section>
+    </div>
+    <div class="media">
+        <a href="https://www.linkedin.com/in/mohammed-soban-ijaz-102203224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="linkdln.jpg"></a>
+        <a href="https://github.com/skyark747" target="_blank"><img src="github.png"></a>
+        <a href="https://www.instagram.com/m.soban1._?igsh=ZGUzMzM3NWJiOQ==" target="_blank"><img src="instagram.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100011328240466" target="_blank"><img src="facebook.png"></a>
     </div>
 </body>

@@ -22,6 +22,31 @@
                 var pdfURL = "soban.cv.pdf"; 
                 window.open(pdfURL, '_blank');
             }
+
+                
+        let text="Soban";
+        
+        document.addEventListener("DOMContentLoaded", function(){
+            
+            let i=0;
+            function typeEffect() {
+                if (i < text.length) {
+                    document.querySelector(".s").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeEffect, 800); 
+                }
+                else{
+                    document.querySelector(".s").innerHTML="";
+                    i=0;
+                    setTimeout(typeEffect, 800);
+                }
+            }
+            typeEffect(); 
+        });
+        
+           
+           
+
         </script>
         <div class="details">
             <button onClick="myFunction()" class="info">MENU</button>
@@ -32,13 +57,14 @@
                 <a href="awards.html">Achievements</a>
                 <a href="project.html">Projects</a>
             </div>
-            <button class="button">Contact me</button>
+
+            <div id="google_translate_element"></div>
         </div>
         <section class="container">
                 <div class="home">
-                    <span class="h">Hello</span><br>
+                    <span class="h">Hi</span><br>
                     <span class="i">I'm</span>
-                    <span class="s">Soban<br></span>
+                    <span class="s"></span><br>
                     <span class="c">a Computer Scientist</span><br>
                     <P>
                         I am a passionate software engineer with a strong foundation in computer science<br> 
@@ -52,11 +78,20 @@
             </div>
         </section>
         <div class="buttons">
-            <button class="button" onclick="openPDF()">Resume</button>
+            <button class="button" onclick="openPDF()">CV</button>
             <button class="buttona">Hire Me</button>
         </div>
         <footer>
             <p>2024 Soban. All rights reserved.</p>
         </footer>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+            }
+        </script>
+
+        
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>
 </html>
