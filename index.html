@@ -10,6 +10,47 @@
     </head>
     <body>
         <script >
+
+            const information = {
+                    greeting: "Hi",
+                    extra: "I'm",
+                    name: "Soban",
+                    profession: "a Computer Scientist",
+                    translations : {
+                            English: {
+                                greet: "Hi",
+                                title: "I'm",
+                                name:"Soban",
+                                description: "a Computer Scientist"
+                            },
+                            Urdu: {
+                                greet:"خوش آمدید",
+                                title: " میں ",
+                                name:"ثوبان",
+                                description: "میں کمپیوٹر سائنس میں مضبوط بنیادوں والا ایک پرجوش سافٹ ویئر انجینئر ہوں"
+                            },
+                        
+                            Arabic: {
+                                greet: "مرحبا",
+                                title: "في ",
+                                name:"ثوبان",
+                                description: "أنا مهندس برمجيات شغوف ولدي أساس قوي في علوم الكمبيوترر"
+                            },
+                            Latin: {
+                                greet: "Salut",
+                                title: "Meum",
+                                name:"Soban",
+                                description: "Sum studiosus programmandi ingeniero cum solida scientiarum computarum fundamenta"
+                            },
+                            Germen: {
+                                greet: "Hallo",
+                                title: "ich bin",
+                                name:"Soban",
+                                description: "ich bin ein leidenschaftlicher Softwareentwickler mit soliden Computerwissenschaften"
+                            }
+                        },
+                    Pages:["skills.html","about.html","awards.html","project.html"],
+                }
             function myFunction() {
                 if (document.getElementById("dropdown").style.display=="block") {
                     document.getElementById("dropdown").style.display="none";
@@ -24,49 +65,91 @@
             }
 
                 
-        let text="Soban";
-        
+    
+        let text = information.name;
+
         document.addEventListener("DOMContentLoaded", function(){
-            
-            let i=0;
-            function typeEffect() {
-                if (i < text.length) {
-                    document.querySelector(".s").innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(typeEffect, 800); 
+            document.querySelector(".h").innerHTML = information.greeting;
+            document.querySelector(".i").innerHTML = information.extra;
+            document.querySelector(".c").innerHTML = information.profession;
+
+            document.querySelector(".lg").addEventListener("change", function () {
+                document.getElementById("description").style.display = "none";
+                document.querySelector(".h").innerHTML = information.translations[this.value].greet;
+                document.querySelector(".i").innerHTML = information.translations[this.value].title;
+                document.querySelector(".c").innerHTML = information.translations[this.value].description;
+                text=information.translations[this.value].name;
+                if(this.value=="English"){
+                    document.getElementById("description").style.display = "block";
                 }
-                else{
-                    document.querySelector(".s").innerHTML="";
-                    i=0;
-                    setTimeout(typeEffect, 800);
-                }
-            }
-            typeEffect(); 
+
+            });
+            const v="_self";
+            document.getElementById("Skills").addEventListener("click",function(){
+                window.open(information.Pages[0],v);
+            })
+
+            document.getElementById("About").addEventListener("click",function(){
+                window.open(information.Pages[1],v);
+            })
+
+            document.getElementById("Awards").addEventListener("click",function(){
+                window.open(information.Pages[2],v);
+            })
+
+            document.getElementById("Projects").addEventListener("click",function(){
+                window.open(information.Pages[3], v);
+            })
+
         });
+
+            document.addEventListener("DOMContentLoaded", function () {
+
+                let i = 0;
+                function typeEffect() {
+                    if (i < text.length) {
+                        document.querySelector(".s").innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(typeEffect, 800);
+                    }
+                    else {
+                        document.querySelector(".s").innerHTML = "";
+                        i = 0;
+                        setTimeout(typeEffect, 800);
+                    }
+                }
+                typeEffect();
+            });
         
-           
-           
 
         </script>
         <div class="details">
             <button onClick="myFunction()" class="info">MENU</button>
             <a href="#"  class="logo"><span>So</span>ban</a>
             <div class="nav" id="dropdown">
-                <a href="skills.html">Skills</a>
-                <a href="about.html">About</a>
-                <a href="awards.html">Achievements</a>
-                <a href="project.html">Projects</a>
+                <a href="#" id="Skills">Skills</a>
+                <a href="#" id="About">About</a>
+                <a href="#" id="Awards">Achievements</a>
+                <a href="#" id="Projects">Projects</a>
             </div>
 
-            <div id="google_translate_element"></div>
+            <select class="lg">
+
+                <option value="English" selected>English</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Germen">Germen</option>
+                <option value="Latin">Latin</option>
+            </select>
+
         </div>
         <section class="container">
                 <div class="home">
-                    <span class="h">Hi</span><br>
-                    <span class="i">I'm</span>
+                    <span class="h"></span><br>
+                    <span class="i"></span>
                     <span class="s"></span><br>
-                    <span class="c">a Computer Scientist</span><br>
-                    <P>
+                    <span class="c"></span><br>
+                    <P id="description"> 
                         I am a passionate software engineer with a strong foundation in computer science<br> 
                         and a keen interest in AI/ML.I have a proven track record of working on challenging projects and successfully <br>
                         advancing my skills in the field. I am eager to collaborate with talented individuals to create innovative <br>
@@ -84,14 +167,5 @@
         <footer>
             <p>2024 Soban. All rights reserved.</p>
         </footer>
-        <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-            }
-        </script>
-
-        
-        <script type="text/javascript"
-            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>
 </html>

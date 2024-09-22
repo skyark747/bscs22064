@@ -103,6 +103,30 @@
         } 
         }
     </style>
+    <script>
+        const Social={
+            linkdln:"https://www.linkedin.com/in/mohammed-soban-ijaz-102203224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            github:"https://github.com/skyark747" ,
+            facebook:  "https://www.facebook.com/profile.php?id=100011328240466",
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            document.getElementById("linkdln").addEventListener("click", function(){
+                window.open(Social.linkdln);
+            });
+
+            document.getElementById("github").addEventListener("click", function(){
+                window.open(Social.github);
+            });
+
+            document.getElementById("facebook").addEventListener("click", function(){
+                window.open(Social.facebook);
+            });
+            document.getElementById("insta").addEventListener("click", function(){
+                window.open(Social.insta);
+            })
+        })
+    </script>
     <div class="heading">
         <P><span>Abo</span>ut</P>
     </div>
@@ -117,9 +141,9 @@
             </section>
     </div>
     <div class="media">
-        <a href="https://www.linkedin.com/in/mohammed-soban-ijaz-102203224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="linkdln.jpg"></a>
-        <a href="https://github.com/skyark747" target="_blank"><img src="github.png"></a>
-        <a href="https://www.instagram.com/m.soban1._?igsh=ZGUzMzM3NWJiOQ==" target="_blank"><img src="instagram.png"></a>
-        <a href="https://www.facebook.com/profile.php?id=100011328240466" target="_blank"><img src="facebook.png"></a>
+        <a id="linkdln" href="#" target="_blank"><img src="linkdln.jpg"></a>
+        <a id="github" href="#" target="_blank"><img src="github.png"></a>
+        <a id="insta" href="#" target="_blank"><img src="instagram.png"></a>
+        <a id="facebook" href="#" target="_blank"><img src="facebook.png"></a>
     </div>
 </body>
