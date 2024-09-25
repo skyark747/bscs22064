@@ -21,32 +21,38 @@
                                 greet: "Hi",
                                 title: "I'm",
                                 name:"Soban",
-                                description: "a Computer Scientist"
+                                description: "a Computer Scientist",
+                                detail:"I am a passionate software engineer with a strong foundation in computer science and a keen interest in AI/ ML.I have a proven track record of working on challenging projects and successfully advancing my skills in the field.I am eager to collaborate with talented individuals to create innovative solutions for real - world problems.Please feel free to contact me for more information or to schedule a meeting.",
                             },
                             Urdu: {
                                 greet:"خوش آمدید",
                                 title: " میں ",
                                 name:"ثوبان",
-                                description: "میں کمپیوٹر سائنس میں مضبوط بنیادوں والا ایک پرجوش سافٹ ویئر انجینئر ہوں"
+                                description: "کمپیوٹر سائنسدان",
+                                detail:"میں ایک پُرعزم سوفٹ ویئر انجینئر ہوں جس کی کمپیوٹر سائنس میں مضبوط بنیاد ہے اور مصنوعی ذہانت (AI) اور مشین لرننگ (ML) میں گہری دلچسپی ہے۔ میرے پاس چیلنجنگ پروجیکٹس پر کام کرنے اور اس میدان میں اپنی صلاحیتوں کو کامیابی سے بہتر بنانے کا ثابت شدہ ریکارڈ ہے۔ میں باصلاحیت افراد کے ساتھ تعاون کرنے کا خواہشمند ہوں تاکہ حقیقی دنیا کے مسائل کے لیے جدید حل پیدا کیے جا سکیں۔ مزید معلومات یا ملاقات کا وقت طے کرنے کے لیے براہ کرم بلا جھجھک رابطہ کریں۔",
                             },
                         
                             Arabic: {
                                 greet: "مرحبا",
                                 title: "في ",
                                 name:"ثوبان",
-                                description: "أنا مهندس برمجيات شغوف ولدي أساس قوي في علوم الكمبيوترر"
+                                description: "عالِم الحاسوب",
+                                detail: "أنا مهندس برمجيات شغوف ولدي أساس قوي في علوم الكمبيوتر واهتمام كبير بالذكاء الاصطناعي وتعلم الآلة. لدي سجل حافل بالعمل على مشاريع صعبة وتحسين مهاراتي بنجاح في هذا المجال. أتطلع للتعاون مع أفراد موهوبين لابتكار حلول مبتكرة للمشاكل الواقعية. لا تتردد في الاتصال بي لمزيد من المعلومات أو لتحديد موعد للاجتماع."
                             },
                             Latin: {
-                                greet: "Salut",
-                                title: "Meum",
-                                name:"Soban",
-                                description: "Sum studiosus programmandi ingeniero cum solida scientiarum computarum fundamenta"
+                                greet: "안녕하세요",
+                                title: "저는",
+                                name:"소반입니다",
+                                description: "컴퓨터 과학자입니다",
+                                detail: "저는 컴퓨터 과학에 대한 탄탄한 기초와 인공지능(AI) 및 머신러닝(ML)에 깊은 관심을 가진 열정적인 소프트웨어 엔지니어입니다. 저는 도전적인 프로젝트에서 일하며 이 분야에서 제 기술을 성공적으로 발전시킨 검증된 경력을 가지고 있습니다. 재능 있는 사람들과 협력하여 실제 문제에 대한 혁신적인 해결책을 만드는 것을 열망하고 있습니다. 더 많은 정보나 미팅 예약을 원하시면 언제든지 연락 주시기 바랍니다."
+                    
                             },
                             Germen: {
                                 greet: "Hallo",
                                 title: "ich bin",
                                 name:"Soban",
-                                description: "ich bin ein leidenschaftlicher Softwareentwickler mit soliden Computerwissenschaften"
+                                description: "Ein Informatiker",
+                                detail: "Ich bin ein leidenschaftlicher Software-Ingenieur mit einer soliden Grundlage in der Informatik und großem Interesse an KI und maschinellem Lernen. Ich habe eine nachgewiesene Erfolgsbilanz bei der Arbeit an herausfordernden Projekten und konnte meine Fähigkeiten in diesem Bereich erfolgreich weiterentwickeln. Ich freue mich darauf, mit talentierten Menschen zusammenzuarbeiten, um innovative Lösungen für reale Probleme zu schaffen. Bitte zögern Sie nicht, mich für weitere Informationen oder zur Vereinbarung eines Treffens zu kontaktieren."
                             }
                         },
                     Pages:["skills.html","about.html","awards.html","project.html"],
@@ -72,16 +78,15 @@
             document.querySelector(".h").innerHTML = information.greeting;
             document.querySelector(".i").innerHTML = information.extra;
             document.querySelector(".c").innerHTML = information.profession;
+            
+            document.getElementById("description").innerHTML = information.translations.English.detail
 
             document.querySelector(".lg").addEventListener("change", function () {
-                document.getElementById("description").style.display = "none";
                 document.querySelector(".h").innerHTML = information.translations[this.value].greet;
                 document.querySelector(".i").innerHTML = information.translations[this.value].title;
                 document.querySelector(".c").innerHTML = information.translations[this.value].description;
+                document.getElementById("description").innerHTML=information.translations[this.value].detail;
                 text=information.translations[this.value].name;
-                if(this.value=="English"){
-                    document.getElementById("description").style.display = "block";
-                }
 
             });
             const v="_self";
@@ -114,12 +119,12 @@
                     if (i < text.length) {
                         document.querySelector(".s").innerHTML += text.charAt(i);
                         i++;
-                        setTimeout(typeEffect, 800);
+                        setTimeout(typeEffect, 500);
                     }
                     else {
                         document.querySelector(".s").innerHTML = "";
                         i = 0;
-                        setTimeout(typeEffect, 800);
+                        setTimeout(typeEffect, 200);
                     }
                 }
                 typeEffect();
@@ -143,7 +148,7 @@
                 <option value="Arabic">Arabic</option>
                 <option value="Urdu">Urdu</option>
                 <option value="Germen">Germen</option>
-                <option value="Latin">Latin</option>
+                <option value="Latin">Korean</option>
             </select>
 
         </div>
@@ -154,15 +159,12 @@
                     <span class="s"></span><br>
                     <span class="c"></span><br>
                     <P id="description"> 
-                        I am a passionate software engineer with a strong foundation in computer science<br> 
-                        and a keen interest in AI/ML.I have a proven track record of working on challenging projects and successfully <br>
-                        advancing my skills in the field. I am eager to collaborate with talented individuals to create innovative <br>
-                        solutions for real-world problems. Please feel free to contact me for more information or to schedule a meeting.
+                        
                     </P>
                 </div>
                 <div class="image">
-                    <img src="soban2.jpg" class="img">
-            </div>
+                    <img src="soban2.jpg" class="img">      
+                </div>
         </section>
         <div class="buttons">
             <button class="button" onclick="openPDF()">CV</button>

@@ -1,14 +1,15 @@
 body {
-
-    background-color: white;
-
+    background-color:#a8dadc;
+    margin: 0;
+    padding: 0;
 }
 
 .details {
-    background-color: rgb(36, 36, 73);
+    background-color:#1d3557;
+    color: #ffffff;
     display: flex;
     height: 80px;
-    margin-top: 0px;
+    width:100%;
 }
 
 .details .info {
@@ -34,7 +35,7 @@ body {
     margin-left: 10vw;
     margin-top: 20px;
     font-size: 30px;
-    color: rgb(243, 42, 42);
+    color: #e63946;
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s ease;
@@ -64,11 +65,12 @@ span {
     text-decoration: none;
     margin-right: 30px;
     color: white;
+    transition: 0.3s ease-in-out;
 }
 
 .nav a:hover {
-    background-color: white;
-    color: black;
+    background-color:#f1faee;   
+    color: #1c1c3b;
     border-radius: 5px;
 }
 
@@ -81,35 +83,33 @@ span {
 .home {
     margin-top: 15vh;
     margin-left: 100px;
-
+    width: 55%;
 }
 
 .home .h {
-    color: black;
+    color: #1d3557;
     font-size: 40px;
     margin-left: 40px;
     font-weight: bold;
 }
 
 .s {
-    color: black;
     font-size: 50px;
     margin-left: 40px;
     font-weight: bold;
-    color: orangered;
-    text-shadow: 0 0 25px orangered;
+    color:#e63946;
 }
 
 
 .i {
-    color: black;
+    color: #1d3557;
     font-size: 50px;
     margin-left: 40px;
     font-weight: bold;
 }
 
 .c {
-    color: black;
+    color: #1d3557;
     font-size: 60px;
     margin-left: 40px;
     font-weight: bold;
@@ -118,18 +118,18 @@ span {
 .home p {
     margin-left: 40px;
     margin-top: 50px;
-    font-style: italic;
+    color: #e63946;
 }
 
 .image {
     margin-top: 50px;
     margin-left: 200px;
+    
 }
 
 img {
     width: 270px;
     border-radius: 50%;
-    box-shadow: 0 0 25px orangered;
 }
 
 .buttons {
@@ -141,6 +141,7 @@ img {
     height: 50px;
     width: 100px;
     border-radius: 10px;
+    transition: 0.3s ease;
 }
 
 .buttons .button {
@@ -152,23 +153,23 @@ img {
 
 .buttons .buttona {
     background-color: black;
-    color: white;
+    color:#f1faee;
     font-weight: bold;
     margin-left: 20px;
 }
 
 .buttona:hover {
     color: black;
-    background-color: orangered;
+    background-color:#e63946;
 }
 
 .button:hover {
     color: white;
-    background-color: darkblue;
+    background-color: #1d3557;
 }
 
 footer {
-    background-color: rgb(36, 36, 73);
+    background-color: #1d3557;
     color: white;
     text-align: center;
     padding: 3px;
