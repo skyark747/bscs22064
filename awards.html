@@ -10,48 +10,64 @@
 
 <body>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            background-color:white;
+            background-color:#a8dadc;
         }
 
         .heading {
             height: 80px;
             display: flex;
             
-            background-color: rgb(36, 36, 73);
+            background-color: #1d3557;
+            width: 100%;
         }
 
-        .heading p{
-            margin-left: 40px;
-            font-style: italic;
-            font-size: 50px;
-            color:orangered;
+        .heading h1{
+            color: white;
+            margin-left: 50px;
             margin-top: 10px;
-        }
-        .heading span{
-            color:white;
+            font-size: 40px;
         }
         h1 span{
-            color: orangered;
+            color: #e63946;
         }
         .Awards h1 {
             font-size: 50px;
             margin-left: 50px;
             margin-top: 100px;
-            color:black;
+            color:#1d3557;
         }
         img {
+            margin-top: 50px;
             border-radius: 20px;
             margin-left: 50px;
             width: 500px;
-            box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
         }
-        img.a{
-            border-radius: 20px;
-            padding-left: 100px;
-            height: 255px;
+        .images{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 100px;
         }
-
+        .bari{
+            height: 260px;
+        }
+        .a{
+            transition: 0.3s ease-in-out;
+        }
+        .b{
+            transition: 0.3s ease-in-out;
+        }
+        .a :hover{
+            transform: scale(1.1);
+        }
+        .b :hover{
+            transform: scale(1.1);
+        }
         @media (max-width: 768px) {
         body {
             background-color:white;
@@ -104,18 +120,17 @@
     }
     </style>
     <div class="heading">
-        <P class="a">Awards <span>& Certificates</span></P>
+        <h1>Awards</h1>
     </div>
     <div class="Awards">
-        <section>
+        
             <h1><span>Game</span> Development</h1>
-
-            <img src ="g1.jpg" class="b" alt="game development" >
-            <img src="g2.jpg" class="a" alt="game development">
-        </section>
-
-        <section>
-            <h1>Competitive<span> Programming</span></h1>
-        </section>
+    <div class="images">
+            <div class="a">
+            <img src ="g1.jpg" ="game development" ></div>
+            <div class="b">
+            <img src="g2.jpg" class="bari" alt="game development">
+            </div>
+    </div>
     </div>
 </body>
