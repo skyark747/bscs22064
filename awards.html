@@ -70,53 +70,61 @@
         }
         @media (max-width: 768px) {
         body {
-            background-color:white;
+            background-color:#a8dadc;
+            
         }
 
         .heading {
-            height: 120px;
+            height: 80px;
             display: flex;
             
             background-color: rgb(36, 36, 73);
         }
-
-        .heading p{
+        .heading h1{
             margin-left: 20px;
-            font-style: italic;
-            font-size: 40px;
-            color:orangered;
-            margin-top: 10px;
-        }
-        .heading span{
-            color:white;
-        }
-        h1 span{
-            color: orangered;
         }
         .Awards h1 {
             font-size: 30px;
             margin-left: 10px;
             margin-top: 100px;
             color:black;
+            
         }
         img {
+            margin-top: 50px;
             border-radius: 20px;
             margin-left: 10px;
+            width: 300px;
+        }
+        .images{
+            display: flex;
+            flex-direction: column;
+        }
+        .bari{
+            height: 160px;
             
-            box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
         }
-        img.b{
-            margin-top: 30px;
-            width:250px;
+        .a{
+            transition: 0.3s ease-in-out;
+        }
+        .b{
+            transition: 0.3s ease-in-out;
+        }
+        .a :hover{
+            transform: scale(1.1);
+        }
+        .b :hover{
+            transform: scale(1.1);
+        }
+         footer {
+        background-color: rgb(36, 36, 73);
+        color: white;
+        text-align: center;
+        padding: 3px;
+        width: 100%;
+        position: relative;
 
-        }
-        img.a{
-            margin-top: 30px;
-            border-radius: 20px;
-            padding-left: 100px;
-            height: 150px;
-            width: 150px;
-        }
+    }
     }
     </style>
     <div class="heading">
@@ -133,4 +141,7 @@
             </div>
     </div>
     </div>
+    <footer>
+        <p>2024 Soban. All rights reserved.</p>
+    </footer>
 </body>
