@@ -94,10 +94,6 @@
                 window.open(information.Pages[0],v);
             })
 
-            document.getElementById("About").addEventListener("click",function(){
-                window.open(information.Pages[1],v);
-            })
-
             document.getElementById("Awards").addEventListener("click",function(){
                 window.open(information.Pages[2],v);
             })
@@ -108,9 +104,16 @@
 
             document.querySelector(".buttona").addEventListener("click",()=>{
                 window.open("Hireme.html",v);
+
             })
 
+             
+
         });
+        function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
 
             document.addEventListener("DOMContentLoaded", function () {
 
@@ -130,14 +133,14 @@
                 typeEffect();
             });
         
-
+            
         </script>
         <div class="details">
             <button onClick="myFunction()" class="info">MENU</button>
             <a href="#"  class="logo"><span>So</span>ban</a>
             <div class="nav" id="dropdown">
                 <a href="#" id="Skills">Skills</a>
-                <a href="#" id="About">About</a>
+                <a href="#!" onclick="scrollToSection('about-section')" id="About">About</a>
                 <a href="#" id="Awards">Achievements</a>
                 <a href="#" id="Projects">Projects</a>
             </div>
@@ -170,6 +173,25 @@
             <button class="button" onclick="openPDF()">CV</button>
             <button class="buttona" >Hire Me</button>
         </div>
+
+        <section class="About" id="about-section">
+            <div class="images">
+                <img src="soban2.jpg" class="img">
+            </div>
+            <div class="home-about">
+                
+                <h1>About Me</h1>
+                <P id="des-2">I am student of Computer Science currently in 3rd year at ITU, Arfa Qareem Softwre Technology Park , Lahore.
+                    I have strong foundation in Computer Science and my interests are in Artificial Intelligence, Machine Learning, and Software Engineering. 
+                    I have worked on challenging projects and have successfully developed my skills in this field.My area of interest is AI 
+                    because it is changing the world and evolving it to advance form that one can only wonder how these things are done? this idea drove 
+                    me to pursue Artificial Intelligence.I have done my matriculation from
+                    APS and my intermediate from Punjab College.I am eager to work with talented individuals to develop innovative solutions for real-world problems. 
+                    Please feel free to contact me for more information or to schedule a meeting.
+                </P>
+            </div>
+            
+        </section>
         <footer>
             <p>2024 Soban. All rights reserved.</p>
         </footer>
