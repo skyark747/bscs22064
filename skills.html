@@ -37,10 +37,6 @@
             
             }
             
-            .skills{
-                padding: 1rem;
-                cursor: pointer;
-            }
             
             .skill-name{
                 height: 200px;
@@ -49,6 +45,7 @@
                 border-radius: 30px;
                 color: white;
                 transition: 0.3s ease-in-out;
+                margin-left: 100px;
                 
             }
             
@@ -80,18 +77,79 @@
                     width: 100%;
                 }
             footer p {
-                font-size: large;;
+                font-size: large;
             }
             
             @media (max-width: 768px) {
-             
+             .heading{
+                 background-color:#1d3557;
+                 color: #ffffff;
+                 height: 80px;
+                 width:100%;
+            }
+            p{
+                font-size: 50px;
+                margin-left: 20px;
+            }
+            .container{
+                display: flex;
+                height: 30vh;
+                gap: 5px;
+                font-size: 15px;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .skills{
+                cursor: pointer;
+            }
+            
+            .skill-name{
+                height: 200px;
+                width: 150px;
+                background-color: #457b9d;
+                border-radius: 30px;
+                color: white;
+                transition: 0.3s ease-in-out;
+                margin-left: 6px;
+                margin-right: 6px;
+                
+            }
+            
+            
+            .image{
+                margin-top: 50px;
+                height: 70px;
+                transition: 0.3s ease-in-out;
+            }
+            .image :hover{
+                transform: scale(1.1);
+            }
+            img{
+                width: 50px;
+                height: 50px;
+                position: relative;
+                border-radius: 10px;
+                background-color: white;
+                
+            }
+            
+            footer {
+                    background-color: #1d3557;
+                    color: white;
+                    text-align: center;
+                    padding: 3px;
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                    margin-top: 30px;
+                }
             }
         </style>
         <div class="heading">
             <P>Skills</P>
         </div>
         <section class="container">
-            <div class="skills"></div>
                 <div class="skill-name">
                     <div class="image">
                         <img src="python.png" alt="C">
@@ -99,15 +157,13 @@
                     <h3>Python</h3>
                 </div>
             </div>
-            <div class="skills"></div>
                 <div class="skill-name">
                     <div class="image">
                         <img src="Cpp.png" alt="C">
                     </div>
                     <h3>C/C++</h3>
                 </div>
-            </div>
-                <div class="skills"></div>
+            
                     <div class="skill-name">
                         <div class="image">
                             <img src="AI.png" alt="C">
@@ -118,7 +174,6 @@
             
         </section>
         <section class="container">
-            <div class="skills"></div>
             <div class="skill-name">
                 <div class="image">
                     <img src="code.png" alt="C">
@@ -126,7 +181,6 @@
                 <h3>Web Development</h3>
             </div>
             </div>
-            <div class="skills"></div>
             <div class="skill-name">
                 <div class="image">
                     <img src="unity.png" alt="C">
@@ -134,17 +188,15 @@
                 <h3>Game Development</h3>
             </div>
             </div>
-            <div class="skills"></div>
             <div class="skill-name">
                 <div class="image">
                     <img src="MySQL.jpeg" class="MySQL" alt="C">
                 </div>
                 <h3>MySQL</h3>
             </div>
-            </div>
+            
         </section>
         <section class="container">
-            <div class="skills"></div>
             <div class="skill-name">
                 <div class="image">
                     <img src="prm.png" alt="C">
@@ -152,22 +204,20 @@
                 <h3>Project Management</h3>
             </div>
             </div>
-            <div class="skills"></div>
-            <div class="skill-name">
+           <div class="skill-name">
                 <div class="image">
                     <img src="leader.png" alt="C">
                 </div>
                 <h3>LeaderShip</h3>
+            
             </div>
-            </div>
-            <div class="skills"></div>
             <div class="skill-name">
                 <div class="image">
                     <img src="com.jpg" class="MySQL" alt="C">
                 </div>
                 <h3>Communication</h3>
             </div>
-            </div>
+            
         </section>  
         <footer>
             <p>2024 Soban. All rights reserved.</p>
