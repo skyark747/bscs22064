@@ -10,150 +10,224 @@
 
 <body>
     <style>
-       *{
-           margin: 0;
-           padding: 0;
-           box-sizing: border-box;
-       }
-       body{
-            background-color: #457b9d;
-       }
-       nav{
-        width: 100%;
-        height: 80px;
-        background-color: #1d3557;
-        font-size: 30px;
-        text-align: center;
-       }
-       nav h1{
-           margin-left: 20px;
-           color: white;
-       }
-       .container{
-           display: flex;
-           flex-direction: row;
-           height: 45vh;
-       }
-       .p_detail{
-        background-color: #f1faee;
-        width: 50%;
-        height: 100%;
-        margin-left: 0;
-       }
-       .p_detail h1{
-           font-size: 40px;
-           margin-left: 50px;
-           margin-top: 30px;
-           color: #e63946;
-           text-decoration: underline;
-       }
-       .description{
-        margin-top: 50px;
-        margin-left: 50px;
-        font-size: 20px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-       }
-       
-       video{
-        width: 50%;
-        background-color: black;
-       }
-       footer {
-    background-color: #1d3557;
-    color: white;
-    text-align: center;
-    padding: 3px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-}
+        body {
+            background-color: #212529;
+        }
+
+        nav {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        nav h1 {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .container {
+
+            display: flex;
+            flex-direction: column;
+            height: 45vh;
+            width: 25%;
+        }
+
+        .main {
+
+            justify-content: center;
+            display: flex;
+            gap: 20vw;
+            height: 60vh;
+            margin-top: 2%;
+        }
+
+        .main2 {
+            display: flex;
+            gap: 20vw;
+            justify-content: center;
+            margin-top: 0%;
+        }
+
+        .p_detail {
+            justify-content: center;
+            text-align: center;
+            color: white;
+            width: 100%;
+            height: 100%;
+            margin-left: 0;
+            display: none;
+            z-index: 1;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 1);
+            transition: 0.5s ease;
+        }
+
+        .p_detail h1 {
+            font-size: 20px;
+            color: #e63946;
+            text-decoration: underline;
+        }
+
+        .description {
+            margin-top: 2%;
+            font-size: 20px;
+
+        }
+
+        iframe {
+            width: 100%;
+            border-radius: 5px;
+
+        }
+
+        video {
+            width: 100%;
+            background-color: black;
+            border-radius: 5px;
+        }
+
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+        }
+
 
         @media (max-width: 768px) {
-        nav{
-        width: 100%;
-        height: 80px;
-        background-color: #1d3557;
-        font-size: 30px;
-        text-align: center;
-       }
-       nav h1{
-           margin-left: 10px;
-           color: white;
-       }
-       .container{
-           display: flex;
-           flex-direction: row;
-           width: 100%;
-           height: 45vh;
-       }
-       .p_detail{
-        background-color: #f1faee;
-        width: 50%;
-        height: 100%;
-        margin-left: 0;
-       }
-       .p_detail h1{
-           font-size: 20px;
-           margin-left: 50px;
-           margin-top: 10px;
-           color: #e63946;
-           text-decoration: underline;
-       }
-       .description{
-        margin-top: 10px;
-        margin-left: 20px;
-        font-size: 15px;
+            nav {
+                width: 100%;
+                height: 80px;
+                background-color: black;
+                font-size: 30px;
+                text-align: center;
+            }
 
-       }
-       
-       video{
-        width: 50%;
-        background-color: black;
-       }
-       footer {
-    background-color: #1d3557;
-    color: white;
-    text-align: center;
-    padding: 3px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-}
-iframe{
-    width: 50%;
-    height: 100%;
-}
+            nav h1 {
+                margin-left: 20px;
+                color: white;
+            }
+
+            .container {
+                margin-top: 0rem;
+                display: block;
+                height: 90vh;
+                width: 100%;
+
+            }
+
+            .main {
+
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                height: 200vh;
+                width: 100%;
+                align-items: center;
+            }
+
+            .main2 {
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                height: 200vh;
+                width: 100%;
+                align-items: center;
+            }
+
+            .p_detail {
+                display: block;
+                justify-content: center;
+                text-align: center;
+                color: white;
+                width: 100%;
+                height: 100%;
+                margin-left: 0;
+                z-index: 1;
+                border-radius: 10px;
+                background: rgba(0, 0, 0, 1);
+                transition: 0.5s ease;
+            }
+
+            .p_detail h1 {
+                font-size: 50px;
+                color: #e63946;
+                text-decoration: underline;
+
+            }
+
+            .description {
+                margin-top: 3%;
+                font-size: 25px;
+            }
+
+            iframe {
+                width: 100%;
+                border-radius: 5px;
+
+            }
+
+            video {
+                width: 100%;
+                background-color: black;
+                border-radius: 5px;
+            }
+
+
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 3px;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                height: 30px;
+            }
+
         }
     </style>
     <script>
-        projects={
-            Mongodb:{
+        projects = {
+            Mongodb: {
                 title: "Mongo db",
                 description: "I developed a custom MongoDB from scratch, utilizing my own data structures to efficiently manage and store data. The implementation includes socket programming in both C and C++, enabling seamless client-server communication for data retrieval and manipulation. This project showcases my ability to integrate advanced concepts in database management and networking.",
-                
+
             },
-            PaintApp:{
+            PaintApp: {
                 title: "Paint App",
                 description: "I developed a paint application using Tkinter in Python, designed to closely mimic the user interface of the original paint app. The application features essential tools such as drawing, color selection, and shape creation, allowing users to create and edit images intuitively. This project highlights my proficiency in GUI development and my ability to replicate familiar software functionalities while enhancing the user experience.",
-                
+
             },
-            LostWoods:{
+            LostWoods: {
                 title: "Lost Woods",
                 description: "I developed a game titled Lost Woods using the Unity3D engine, combining elements of adventure and horror within a tower defense framework. Players navigate through eerie landscapes while strategically placing defenses against lurking threats. The game features a unique camera perspective that highlights light flash plants, creating an immersive atmosphere that enhances the tension and visual experience. This project demonstrates my skills in game design, programming, and creating engaging environments",
-                
+
             },
-            Ai:{
+            Ai: {
                 title: "Chess game",
                 description: "I developed a chess game in C/C++, implementing the complete set of rules and mechanics of the traditional game. The game features a basic user interface, supports two-player mode, and includes key functionalities like move validation, check, and checkmate detection. This project showcases my understanding of game logic and my ability to implement complex algorithms in C/C++",
-                
+
             }
         }
 
-        document.addEventListener("DOMContentLoaded",()=>{
-            const title=document.querySelectorAll(".title");
-            const description=document.querySelectorAll(".description");
+        document.addEventListener("DOMContentLoaded", () => {
+            const title = document.querySelectorAll(".title");
+            const description = document.querySelectorAll(".description");
 
             const projectKeys = Object.keys(projects);
 
@@ -162,47 +236,79 @@ iframe{
                 title[i].innerHTML = project.title;
                 description[i].innerHTML = project.description;
             }
+            let videos = document.querySelectorAll("#v");
+            let p_details = document.querySelectorAll(".p_detail");
+
+            document.querySelector(".main2").style.marginTop = "-120px";
+
+            videos.forEach((video, index) => {
+                video.addEventListener("mouseover", () => {
+                    p_details[index].style.display = "block";
+                    video.style.transform = "pointer";
+                    video.style.transform = "scale(1.1)";
+                    p_details[index].style.transform = "scale(1.1)";
+                    video.style.transition = "all 0.5s ease-in-out";
+                    p_details[index].style.transition = "all 0.5s ease-in-out";
+                });
+
+                video.addEventListener("mouseout", () => {
+                    p_details[index].style.display = "none";
+                    video.style.transform = "scale(1)";
+                    p_details[index].style.transform = "scale(1)";
+                });
+            });
+
         })
     </script>
-    <nav class="T"><h1>Projects</h1></nav>
-    <section class="container">
-        <div class="p_detail">
-            <h1 class="title"></h1>
-            <P class="description"></P>
-        </div>
-        <video id="video" controls src="Mongo.mp4"></video>
+    <nav class="T">
+        <h1>Projects</h1>
+    </nav>
+    <section class="view">
+        <section class="main">
+            <section class="container">
+                <video id="v" controls src="Mongo.mp4"></video>
+                <div class="p_detail">
+                    <h1 class="title"></h1>
+                    <P class="description"></P>
+                </div>
+            </section>
+            <section class="container">
+                <video id="v" controls src="paint.mp4"></video>
+                <div class="p_detail">
+                    <h1 class="title"></h1>
+                    <P class="description"></P>
+                </div>
+
+            </section>
+        </section>
+        <section class="main2">
+            <section class="container">
+                <iframe id="v" width="300" height="200"
+                    src="https://www.youtube.com/embed/eayOHpSt0Fs?si=iWbyXAML7EqipVqH" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <div class="p_detail">
+                    <h1 class="title"></h1>
+                    <P class="description"></P>
+                </div>
+
+
+            </section>
+            <section class="container">
+                <iframe id="v" width="758" height="200"
+                    src="https://www.youtube.com/embed/gvrWX1wjy8M?si=gjKsHFP8YlgmrJWW" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <div class="p_detail">
+                    <h1 class="title"></h1>
+                    <P class="description"></P>
+                </div>
+            </section>
+        </section>
     </section>
-    <section class="container">
-        <video id="video" controls src="paint.mp4"></video>
-        <div class="p_detail">
-            <h1  class="title"></h1>
-            <P class="description"></P>
-        </div>
-    
-    </section>
-    <section class="container">
-        <div class="p_detail">
-            <h1 class="title"></h1>
-            <P class="description"></P>
-        </div>
-        
-    <iframe width="758" height="320" src="https://www.youtube.com/embed/eayOHpSt0Fs?si=iWbyXAML7EqipVqH"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-    <section class="container">
-        <iframe width="758" height="320" src="https://www.youtube.com/embed/gvrWX1wjy8M?si=gjKsHFP8YlgmrJWW"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div class="p_detail">
-            <h1 class="title"></h1>
-            <P class="description"></P>
-        </div>
-    
-    </section>
-    <footer>
-        <p>2024 Soban. All rights reserved.</p>
-    </footer>
+
 </body>
